@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./form.css">
+  <title>Payment_Gateway</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="left">
+      <img src="../public/images/PaymentGateway_side_Image.png" alt="">
+    </div>
+    <div class="right">
+      <form action="https://formspree.io/f/mdoqbkvw" method="post">
+        <!-- <h3 class="heading">E_STORE Pay</h3> -->
+        <div class="first-div" id="FirstEle">
+          <div class="input-wraper">
+            <p class="input-title">
+              Name
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your name" name="username" autocomplete="off">
+          </div>
+          <div class="input-wraper">
+            <p class="input-title">
+              Mobile Num
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your mobile number" name="mobile" autocomplete="off">
+          </div>
+          <p class="btn" onclick="onNextFirst()">Next</p>
+        </div>
+        <div class="second-div" id="SecondEle">
+          <div class="input-wraper">
+            <p class="input-title">
+              Houseno.
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your Houseno." name="houseNum" autocomplete="off">
+          </div>
+          <div class="input-wraper">
+            <p class="input-title">
+              Address
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your address" name="address" autocomplete="off">
+          </div>
+          <div class="input-wraper">
+            <p class="input-title">
+              Landmark
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="landmark near by you" name="landmark" autocomplete="off">
+          </div>
+          <p class="btn" onclick="onNextSecond()">Next</p>
+        </div>
+        <div class="third-div" id="ThirdEle">
+          <div class="input-wraper">
+            <p class="input-title">
+              State
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your state" name="state" autocomplete="off">
+          </div>
+          <div class="input-wraper">
+            <p class="input-title">
+              City
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your city" name="city" autocomplete="off">
+          </div>
+          <div class="input-wraper">
+            <p class="input-title">
+              Pincode
+              <span>*</span>
+            </p>
+            <input type="text" placeholder="Enter your pincode" autocomplete="off">
+          </div>
+          <p class="btn" onclick="onNextThird()">Next</p>
+        </div>
+        <div class="fourth-div" id="FourthEle">
+          <p class="fourth-heading">Select Payment Method for Pay.</p>
+          <button type="submit" class="Cash-payment">Cash On Delivery</button>
+          <p class="QR_Gen" onclick="onNextFourth()">Online Payment</p>
+        </div>
+        <div class="fivth-div" id="FivthEle">
+          <p class="heading_qr">Scan QR for Pay</p>
+          <div class="qr_style">
+            <img src="" alt="qr" id="qr_image">
+          </div>
+          <img src="../public/images/PaymentLogo.png" alt="logo">
+        </div>
+      </form>
+    </div>
+  </div>
+ <script src="./Form.js"></script>
+</body>
+</html>
