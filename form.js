@@ -7,7 +7,7 @@ const FirstEleInput = document.querySelectorAll('#FirstEle input')
 const SecondEleInput = document.querySelectorAll('#SecondEle input')
 const ThirdEleInput = document.querySelectorAll('#ThirdEle input')
 const qr_image = document.getElementById('qr_image');
-const link = `upi://pay?pa=hj076379@ybl%26am=1500%26tn=`
+const link = `upi://pay?pa=YOUR_PHONEPAY_UPI%26am=1500%26tn=`
 const UPI = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${link}`;
 const onNextFirst = () => {
     FirstEleInput.forEach((element) => {
